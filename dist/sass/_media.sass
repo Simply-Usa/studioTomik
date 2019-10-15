@@ -1,16 +1,32 @@
 @media (max-width: 1200px)
-  .container-fluid
-    ul.menu
-      display: none
-    .btn
-      display: flex
   header
     text-align: center
-    ul.menu
-      display: none
     .row
-      .logo
+      .logo 
         text-align: center
         img
           width: 60%
-  
+  header
+    .btn
+      display: flex
+      position: fixed
+      top: 100px
+      right: 20px
+    ul.menu
+      display: none
+      border-radius: 10px
+      box-shadow: 0 0 5px 0 #aaa
+      position: fixed
+      top: 100px
+      right: 80px
+      z-index: 10
+      padding: 20px 0
+      line-height: 30px
+      li
+        a
+          width: 100%
+          display: block
+          height: 100%
+          padding: 0 10px
+          &:active
+            background-color: #aaa
