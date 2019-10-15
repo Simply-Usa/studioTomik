@@ -1,12 +1,15 @@
 @media (max-width: 1200px)
   header
     text-align: center
+    .logo-wrapper
+      order: 1
+    .call-back
+      order: 2
     .row
       .logo 
         text-align: center
         img
           width: 60%
-  header
     .btn
       display: flex
       position: fixed
@@ -22,6 +25,7 @@
       z-index: 10
       padding: 20px 0
       line-height: 30px
+      background-color: #eee
       li
         a
           width: 100%
@@ -30,3 +34,22 @@
           padding: 0 10px
           &:active
             background-color: #aaa
+@media (max-width: 1000px)
+  .header
+    padding-bottom: 50px
+  section.two
+    margin-top: 100px
+    img
+      width: 100%
+      transform: translateY(100px)
+@media (max-width: 770px)
+  .camera
+    display: none
+@media (max-width: 576px)
+  section.two
+    .header-text
+      h1
+        font-size: 30px
+  section#about-us
+    p
+      font-size: 14px
