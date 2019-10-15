@@ -1,3 +1,62 @@
+$color: #161616
+@font-face
+  font-family: Comfortaa
+  src: url(../fonts/Comfortaa-Regular.ttf)
 *
   margin: 0
   padding: 0
+  outline: none
+  box-sizing: border-box
+body
+  font-family: 'Comfortaa'
+  font-size: 18px
+  color: $color
+  background-color: #fafafa
+  font-weight: 300
+a
+  text-decoration: none
+  color: $color
+  &:hover
+    text-decoration: underline
+header
+  padding-top: 20px
+  .row
+    align-items: center
+  .logo
+    img
+      width: 100%
+  ul.menu
+    list-style: none
+    display: flex
+    justify-content: space-around
+section.two
+  margin-top: 100px
+  img
+    width: 100%
+  .header-text
+    button.btn
+      border: none
+      padding: 10px 30px
+      font-size: 18px
+      text-transform: uppercase
+      border-radius: 10px
+      box-shadow: 0 0 10px 0 #444
+      cursor: pointer
+      background-color: $color
+      color: #fff
+      font-weight: 300
+      letter-spacing: 2px
+    h1
+      font-size: 45px
+      font-weight: 700
+    p
+      font-size: 16px
+      font-weight: 600
+      color: #383333
+      margin: 20px 0
+      line-height: 30px
+
+
+
+
+@import '_media.sass'
