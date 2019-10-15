@@ -1,7 +1,20 @@
 $(document).ready(function(){
-  $('a[data-rel^=lightcase]').lightcase();
-  $('header  .btn').click(function(){
-    $(this).toggleClass('active_btn');
-    $('ul.menu').slideToggle();
-  });
+	$(window).scroll(function(){
+		var windowsScroll = $(window).scrollTop();
+		if(windowsScroll >= 100) {
+			$('header .btn').css({
+				'position': 'fixed',
+				'top': '20px'
+			});
+		}else{
+			$('header .btn').css({
+				'top': '100px'
+			});
+		}
+	});
+	$('a[data-rel^=lightcase]').lightcase();
+	$('header  .btn').click(function(){
+		$(this).toggleClass('active_btn');
+		$('ul.menu').slideToggle();
+	});
 });
