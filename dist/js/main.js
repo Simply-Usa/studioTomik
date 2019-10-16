@@ -6,6 +6,9 @@ $(document).ready(function(){
 				'position': 'fixed',
 				'top': '20px'
 			});
+			$('header ul.menu').css({
+				'top': '20px'
+			})
 		}else{
 			$('header .btn').css({
 				'top': '100px'
