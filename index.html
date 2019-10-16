@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="app/css/style.css">
   <link rel="shortcut icon" href="app/img/shortcut.png" type="image/x-icon"/>
   <link rel="stylesheet" href="app/slider/src/css/lightcase.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.css" integrity="sha256-cCazLItaM+Zz5UEzu9HNzlgWhXlvknCzjdE45LBeTns=" crossorigin="anonymous" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
@@ -56,13 +57,56 @@
         </div>
       </section>
     </section>
+    <section class="tabs">
+      <div class="container">
+        <div id="tabs">
+          <!-- Кнопки -->
+          <ul class="tabs-nav">
+            <li><a href="#tab-1">Галерея</a></li>
+            <li><a href="#tab-2">Видео</a></li>
+          </ul>	
+          <!-- Контент -->
+          <div class="tabs-items">
+            <div class="tabs-item" id="tab-1">
+              <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4">
+                  <a href="app/img/svadba-1-1.jpg" data-rel="lightcase:myCollection"><img src="app/img/svadba-1-2.jpg" alt=""></a>
+                  <a href="app/img/svadba-2-1.jpg" data-rel="lightcase:myCollection"><img src="app/img/svadba-2-2.jpg" alt=""></a>
+                  <a href="app/img/svadba-3-1.jpg" data-rel="lightcase:myCollection"><img src="app/img/svadba-3-2.jpg" alt=""></a>
+                  <a href="app/img/svadba-2-1.jpg" data-rel="lightcase:myCollection"><img src="app/img/svadba-2-2.jpg" alt=""></a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4">
+                  <a href="app/img/svadba-3-1.jpg" data-rel="lightcase:myCollection"><img src="app/img/svadba-3-2.jpg" alt=""></a>
+                  <a href="app/img/svadba-4-1.jpg" data-rel="lightcase:myCollection"><img src="app/img/svadba-4-2.jpg" alt=""></a>
+                  <a href="app/img/svadba-2-1.jpg" data-rel="lightcase:myCollection"><img src="app/img/svadba-2-2.jpg" alt=""></a>
+                  <a href="app/img/svadba-5-1.jpg" data-rel="lightcase:myCollection"><img src="app/img/svadba-5-2.jpg" alt=""></a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4">
+                  <a href="app/img/svadba-6-1.jpg" data-rel="lightcase:myCollection"><img src="app/img/svadba-6-2.jpg" alt=""></a>
+                  <a href="app/img/svadba-11-1.jpg" data-rel="lightcase:myCollection"><img src="app/img/svadba-11-2.jpg" alt=""></a>
+                  <a href="app/img/svadba-7-1.jpg" data-rel="lightcase:myCollection"><img src="app/img/svadba-7-2.jpg" alt=""></a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4">
+                  <a href="app/img/svadba-9-1.jpg" data-rel="lightcase:myCollection"><img src="app/img/svadba-9-2.jpg" alt=""></a>
+                  <a href="app/img/svadba-8-1.jpg" data-rel="lightcase:myCollection"><img src="app/img/svadba-8-2.jpg" alt=""></a>
+                  <a href="app/img/svadba-10-1.jpg" data-rel="lightcase:myCollection"><img src="app/img/svadba-10-2.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-item" id="tab-2">
+              kkkk
+            </div>
+          </div>
+        </div> 
+      </div>
+    </section>
     <section id="serv" class="grey">
       <div class="container">
         <h2 class="title">Пакеты</h2>
         <div class="row">
           <div class="col-xl-6 col-sm-12 col-lg-6 col-md-12 col-12">
             <div class="price">
-              <h3><b>Classic</b>:</h3>
+              <h3><i class="fas fa-camera-retro"></i> <b>Classic</b>:</h3>
               <ul>
                 <li>2х камерная съёмка.</li>
                 <li>Фотограф.</li>
@@ -70,13 +114,13 @@
                 <li>Обработка фотографии.</li>
                 <li>Флешка.</li>
               </ul>
-              <p>День вечер - 160.000 тг.</p>
-              <p>Вечер - 110.000 тг.</p>
+              <p>День вечер - 160 000 тг.</p>
+              <p>Вечер - 110 000 тг.</p>
             </div>
           </div>
           <div class="col-xl-6 col-sm-12 col-lg-6 col-md-12 col-12">
             <div class="price">
-              <h3><b>Premium</b>:</h3>
+              <h3><i class="fas fa-medal" style="color: goldenrod"></i><b>Premium</b>:</h3>
               <ul>
                 <li>3х камерная съёмка.</li>
                 <li>Операторский кран 6,8,10м</li>
@@ -85,13 +129,13 @@
                 <li>Обработка фотографии.</li>
                 <li>Флешка.</li>
               </ul>
-              <p>День вечер - 220.000 тг.</p>
-              <p>Вечер - 170.000 тг.</p>
+              <p>День вечер - 220 000 тг.</p>
+              <p>Вечер - 170 000 тг.</p>
             </div>
           </div>
           <div class="col-xl-6 col-sm-12 col-lg-6 col-md-12 col-12">
             <div class="price">
-              <h3><b>Elite</b>:</h3>
+              <h3> <i class="far fa-star" style="color: rgb(229, 255, 0)"></i> <b>Elite</b>:</h3>
               <ul>
                 <li>4х камерная съёмка.</li>
                 <li>Операторский кран 6,8,10м.</li>
@@ -101,23 +145,23 @@
                 <li>Обработка фотографии.</li>
                 <li>Флешка.</li>
               </ul>
-              <p>День вечер - 300.000 тг.</p>
-              <p>Вечер - 240.000 тг.</p>
+              <p>День вечер - 300 000 тг.</p>
+              <p>Вечер - 240 000 тг.</p>
             </div>
           </div>
           <div class="col-xl-6 col-sm-12 col-lg-6 col-md-12 col-12">
-              <div class="price">
-                <h3><b>Love Story</b>:</h3>
-                <ul>
-                  <li>Видео съёмка с Ronin S</li>
-                  <li>Квадрокоптер Phantom 4</li>
-                  <li>Консультация сценарии</li>
-                  <li>Монтаж фильма.</li>
-                </ul>
-                <p>70.000 тг.</p>
-                <p>+ Фотосессия 20 000 тг.</p>
-              </div>
+            <div class="price">
+              <h3><i class="far fa-heart" style="color: red"></i><b>Love Story</b>:</h3>
+              <ul>
+                <li>Видео съёмка с Ronin S</li>
+                <li>Квадрокоптер Phantom 4</li>
+                <li>Консультация сценарии</li>
+                <li>Монтаж фильма.</li>
+              </ul>
+              <p>70.000 тг.</p>
+              <p>+ Фотосессия 20 000 тг.</p>
             </div>
+          </div>
         </div>
       </div>
     </section>
