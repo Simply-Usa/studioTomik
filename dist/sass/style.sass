@@ -221,10 +221,33 @@ section.tabs
           width: 100%
           height: 100%
           padding: 10px 30px
-          background-color: #161616e1
+          background-color: #29292940
           color: #fff
           text-decoration: none
           &.active
            background-color: #fff
            color: #000
+.tabs-nav-photos
+  list-style: none
+  display: grid
+  position: relative
+  grid-template-columns: repeat(auto-fill, minmax(100px, 250px))
+  grid-gap: 20px
+  justify-content: center
+  margin-bottom: 20px
+  border-top: 2px solid
+  padding-top: 10px
+  li
+    box-shadow: 0 0 5px 0 #aaa
+    overflow: hidden
+    border-radius: 10px
+    a
+      display: block
+      width: 100%
+      height: 100%
+      text-align: center
+      padding: 5px 0
+      &.active
+        background-color: #161616d1
+        color: #fff
 @import '_media.sass'
