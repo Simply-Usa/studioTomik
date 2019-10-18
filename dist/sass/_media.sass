@@ -1,4 +1,6 @@
 @media (max-width: 1200px)
+  .tabs-nav-photos
+    grid-template-columns: repeat(auto-fill,minmax(150px,180px))
   header
     text-align: center
     .logo-wrapper
@@ -35,18 +37,26 @@
           padding: 0 10px
           &:active
             background-color: #aaa
-@media (max-width: 1000px)
-  .header
-    padding-bottom: 50px
-  section.two
-    margin-top: 100px
-    img
-      width: 100%
-      transform: translateY(100px)
+
+@media (max-width: 360px)
+  section#about-us
+    .gallary
+      grid-template-columns: repeat(auto-fit, minmax(150px,1fr))
+
+@media (max-width: 600px)
+  .tabs-nav-photos
+    grid-template-columns: repeat(auto-fill,minmax(160px,200px))
+
+
 @media (max-width: 770px)
   .camera
     display: none
+  .tabs-nav-photos
+    grid-template-columns: repeat(auto-fill,minmax(160px,200px))
+
 @media (max-width: 576px)
+  .tabs-nav-photos
+    grid-template-columns: repeat(auto-fill,minmax(150px,180px))
   #serv
     .container
       .row
@@ -64,7 +74,14 @@
       font-size: 14px
     .gallary
       grid-template-columns: repeat(auto-fit, minmax(150px,1fr))
-@media (max-width: 360px)
-  section#about-us
-    .gallary
-      grid-template-columns: repeat(auto-fit, minmax(150px,1fr))
+      
+@media (max-width: 1000px)
+  .tabs-nav-photos
+    grid-template-columns: repeat(auto-fill,minmax(120px,180px))
+  .header
+    padding-bottom: 50px
+  section.two
+    margin-top: 100px
+    img
+      width: 100%
+      transform: translateY(100px)
