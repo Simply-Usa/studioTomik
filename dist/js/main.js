@@ -43,24 +43,30 @@ $(document).ready(function(){
 	// Для фотографий конец
 	
 	
-	
-	
-	$(window).scroll(function(){
-		var windowsScroll = $(window).scrollTop();
-		if(windowsScroll >= 100) {
-			$('header .btn').css({
-				'position': 'fixed',
-				'top': '20px'
-			});
-			$('header ul.menu').css({
-				'top': '20px'
-			})
-		}else{
-			$('header .btn').css({
-				'top': '100px'
-			});
+	$(window).bind('scroll', function() {
+		var windowTop = $(this).scrollTop();
+		if(windowTop >= 300){
+			$('.tabs-items > #tab-2').html('<iframe width="100%" height="315" src="https://www.youtube.com/embed/NU67Bg4Gtck" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="100%" height="315" src="https://www.youtube.com/embed/HGh9tjhbQSc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="100%" height="315" src="https://www.youtube.com/embed/RP81XnxJ7pc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="100%" height="315" src="https://www.youtube.com/embed/54tZnFnPx9Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="100%" height="315" src="https://www.youtube.com/embed/UhSNPYDCuag" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="100%" height="315" src="https://www.youtube.com/embed/zhLBRtkyUAM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+			$(window).unbind('scroll');
 		}
 	});
+	
+	// $(window).scroll(function(){
+	// 	var windowsScroll = $(window).scrollTop();
+	// 	if(windowsScroll >= 100) {
+	// 		$('header .btn').css({
+	// 			'position': 'fixed',
+	// 			'top': '20px'
+	// 		});
+	// 		$('header ul.menu').css({
+	// 			'top': '20px'
+	// 		})
+	// 	}else{
+	// 		$('header .btn').css({
+	// 			'top': '100px'
+	// 		});
+	// 	}
+	// });
 	$('a[data-rel^=lightcase]').lightcase();
 	$('header  .btn').click(function(){
 		$(this).toggleClass('active_btn');
