@@ -17,12 +17,12 @@
     <header>
       <div class="container">
         <div class="row">
-          <div class="logo-wrapper order-xl-1 col-xl-2 col-sm-12 col-lg-6 col-md-6">
+          <div class="logo-wrapper order-1 order-xl-1 col-xl-2 order-sm-1 order-1 col-sm-6 col-lg-6 col-md-6 col-6">
             <div class="logo">
               <img src="app/img/logo.png" alt="Студия">
             </div>
           </div>
-          <div class="col-xl-7 order-2 order-lg-3">
+          <div class="col-xl-7 order-4 order-lg-3 order-sm-3">
             <div class="btn">
               <span></span> 
             </div>
@@ -33,7 +33,7 @@
               <li><a href="#">Контакты</a></li>
             </ul>
           </div>
-          <div class="social order-xl-3 order-lg-2 col-xl-3 col-sm-12 col-12 col-lg-6 col-md-6">
+          <div class="social order-xl-3 order-lg-2 order-sm-2 order-3 col-xl-3 col-sm-6 col-6 col-lg-6 col-md-6 col-6">
             <a href="https://t.me/+7072127785"><i class="fab fa-telegram"></i></a>
             <a href="https://www.facebook.com/profile.php?id=100003563078050"><i class="fab fa-facebook"></i></a>
             <a href="https://api.whatsapp.com/send?phone=77072127785 "><i class="fab fa-whatsapp"></i></a>
@@ -63,7 +63,7 @@
         <!-- Кнопки -->
         <ul class="tabs-nav">
           <li><a href="#tab-1">Галерея <i class="far fa-hand-pointer"></i></a></li>
-          <li><a href="#tab-2">Видео <i class="far fa-hand-pointer"></i></a></li>
+          <li><a href="#tab-2" id="videos">В  идео <i class="far fa-hand-pointer"></i></a></li>
         </ul>	
         <!-- Контент -->
         <div class="tabs-items">
@@ -98,7 +98,7 @@
                     <a href="app/img/svadba-11-1.jpg" data-rel="lightcase:myCollection"><img src="app/img/svadba-11-2.jpg" alt=""></a>
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-                    <a href="app/img/svadba-3-1.jpg" data-rel="lightcase:myCollection"><img src="app/img/svadba-3-2.jpg" alt=""></a>
+                     <a href="app/img/svadba-3-1.jpg" data-rel="lightcase:myCollection"><img src="app/img/svadba-3-2.jpg" alt=""></a>
                     <a href="app/img/svadba-12-1.jpg" data-rel="lightcase:myCollection"><img src="app/img/svadba-12-2.jpg" alt=""></a>
                     <a href="app/img/svadba-13-1.jpg" data-rel="lightcase:myCollection"><img src="app/img/svadba-13-2.jpg" alt=""></a>
                     <a href="app/img/svadba-14-2.jpg" data-rel="lightcase:myCollection"><img src="app/img/svadba-14-1.jpg" alt=""></a>
@@ -122,7 +122,7 @@
               <!-- Love Story -->
               <div class="tabs-item-photos" id="photos-tab-3">
                 <div class="row">
-                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-5 col-2">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-5 col-">
                     <a href="app/img/love-1-1.jpg" data-rel="lightcase:myCollection"><img src="app/img/love-1-2.jpg" alt=""></a>
                     <a href="app/img/love-2-2.jpg" data-rel="lightcase:myCollection"><img src="app/img/love-2-1.jpg" alt=""></a>
                     <a href="app/img/love-3-2.jpg" data-rel="lightcase:myCollection"><img src="app/img/love-3-1.jpg" alt=""></a>
@@ -152,7 +152,9 @@
             </div>
           </div>
           <!-- Таб для видио -->
-          <div class="tabs-item" id="tab-2"></div>
+          <div class="tabs-item" id="tab-2">
+            <!-- Видео подгружается через main.js -->
+          </div>
         </div>
       </div> 
     </div>
@@ -285,26 +287,6 @@
       </div>
     </div>
   </footer>
-  <script defer>
-    // Для прилипающей шапки сайта
-    $(window).scroll(function(){
-      if($(window).scrollTop() >= 3){
-        $('header').css({'padding-top':'5px','transition':'.3s ease-in-out', 'background': '#161616'})
-        $('.menu li a, .social a i').css({'color': '#fff'});
-        $('.logo').html('<img src="app/img/white-logo.png" alt="Студия">');
-        $('header .btn').addClass('white');
-        // $('header .menu li a').css({'color': '#fff'})
-      }else{
-        $('header').css({'padding-top':'20px','background': 'none'});
-        $('.menu li a, .social a i').css({'color': '#161616'});
-        $('.logo').html('<img src="app/img/logo.png" alt="Студия">');
-        $('header .btn').removeClass('white');
-      }
-      if($(this).width() < 1200){
-        $('.menu li a').css({'color': '#fff'});
-      }
-    });
-  </script>
   <script src="app/slider/src/js/lightcase.js"></script>
   <script src="app/js/main.js"></script>
 </body>
